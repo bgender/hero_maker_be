@@ -16,3 +16,12 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+'mix phx.gen.context Instances Instance instances name:string description slot_id:references:slots set_id:references:sets
+'
+'mix phx.gen.context Variables Variable variables set_id:references:sets slot_id:references:slots name info:map
+'
+'mix phx.gen.schema Set sets set_name:string
+'
+'mix phx.gen.context Slots Slot slots slot_name:string trait:string
+'
